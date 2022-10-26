@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { Loading } from "./components/Loading";
 //react-router
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+//import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 export default class App extends Component {
   render() {
     return (
@@ -13,27 +14,21 @@ export default class App extends Component {
        <Navbar />
         <Router>
          
-          <Switch>
+          <Routes>
           
             <Route exact path="/">
-              <News key={"general"} pageSize={9} country="id" category="general" />
             </Route>
             <Route exact path="/Business">
-              <News key={"business"} pageSize={9} country="id" category="business" />
             </Route>
             <Route exact path="/Entertainment">
-              <News key={"entertainment"} pageSize={9} country="id" category="entertainment" />
             </Route>
             <Route exact path="/Sports">
-              <News key={"sports"} pageSize={9} country="id" category="sports" />
             </Route>
             <Route exact path="/Login">
-              <News key={"login"} pageSize={9} country="id" category="login" />
             </Route>
             <Route exact path="/Register">
-              <News  key={"register"} pageSize={9} country="id" category="register" />
             </Route>
-          </Switch>
+          </Routes>
         </Router>
       </>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import{FaHome,FaInfo} from "react-icons/fa";
+//import{FaHome,FaInfo} from "react-icons/fa";
 import { BrowserRouter as  Link } from "react-router-dom";
 
 export class Navbar extends Component {
@@ -28,7 +28,7 @@ export class Navbar extends Component {
            
             <li className="nav-item mx-2">
               <a className="nav-link" href="/">
-                <FaHome/> Home
+                Home
               </a>
             </li>
            
