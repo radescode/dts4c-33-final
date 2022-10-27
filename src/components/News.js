@@ -135,7 +135,7 @@ News.propTypes = {
   category:PropTypes.string,
 };
 News.defaultProps = {
-  country: "in",
+  country: "id",
   pageSize: 9,
   category:"business"
 };
