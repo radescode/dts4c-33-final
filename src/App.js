@@ -4,6 +4,11 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { Loading } from "./components/Loading";
+
+import Home from "./components/Home";
+import Login from "./components/Login";
+import Register from "./components/Register";
+
 //react-router
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 //import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -25,8 +30,10 @@ export default class App extends Component {
             <Route exact path="/Sports">
             </Route>
             <Route exact path="/Login">
+              
             </Route>
             <Route exact path="/Register">
+             
             </Route>
           </Routes>
         </Router>
